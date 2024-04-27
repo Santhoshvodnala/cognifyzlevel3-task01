@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+body{
+  font-family: Arial, sans-serif;
+  background-color:blueviolet;
+}
+
+.head{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  margin: 5px 5px 5px 5px;
+  gap: 5px;
+}
+
+h1{
+  width: 100%;
+  text-align: center;
+  }
+
+button{
+
+ width: auto;
+ height: 30px;
+ border-radius: 5px;
+ border: 0.05px solid black;
+ background-color:wheat;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover{
+box-shadow: 2px 2px 5px rgb(90, 13, 13);
+cursor: pointer;
+}
+
+#stop{
+  display: none;
+}
+
+.gallery {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .thumbnail:hover {    
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px rgb(4, 24, 37);
+  }
+
+  .enlarged {
+   
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    text-align-last: center;  
+  }
+  .enlarged-container{
+    position: absolute;
+    top: 250px;
+    display: none;
+    text-align-last: center;
+  }
+
+  
+  .slideshow-container {
+  
+    width: 100%;
+    position: absolute;
+    top: 135px;
+    left: 14px;
+  }
+  
+  .slide  {
+    display: none;
+    position: relative;
+    width: 100%;
+    
+  }
+
+  .slide > img{
+    width: 500px;
+    height: 507px ;
+    padding-top: 100px;
+  }
+
+  
+  .slideclose {
+    display:none ;
+    position: relative;
+    z-index: 100;
+    right: 150px;
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+    background-color: transparent;
+  
+  }
+
+
+  /* img {
+    width: 100%;
+  } */
+  
+   
+  /* Fade animation */
+  .fade {
+    animation: fade 2s ease-in-out infinite;
+  }
+/*   
+  @keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+  } */
+  
+  .enlarged-container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .closebtn {
+   
+    position: absolute;
+    z-index: 1;
+    right: 150px;
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+    background-color: transparent;
+  
+  }
+  .closebtn:hover{
+    font-size: 70px;
+  }

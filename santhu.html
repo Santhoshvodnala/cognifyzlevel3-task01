@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+  <link rel="stylesheet" href="./style1.css">
+</head>
+<body style="background-color:rgb(49, 131, 106);" >
+  <h1> Image Gallery</h1>
+  
+  <div class="head">
+    <button id="start" onclick="showSlides()"> Play SlideShow</button>
+
+    <button id="stop" onclick="location.reload()"> Stop  </button>
+  </div>
+  
+
+  <div class="gallery">
+    <!-- Thumbnails -->
+    <img class="thumbnail" src="A._P._J._Abdul_Kalam_in_2008.jpg" onclick="showImage(this)" alt="Thumbnail 1">
+    <img class="thumbnail" src="Alluri Seetha Ramaraju.JPG" onclick="showImage(this)" alt="Thumbnail 2">
+    <img class="thumbnail" src="bhagathsingh.jpg" onclick="showImage(this)" alt="Thumbnail 3">
+    <img class="thumbnail" src="sardar-vallabhbhai-patel.webp" onclick="showImage(this)" alt="Thumbnail 4">
+    <img class="thumbnail" src="rani laxmi bai.jpeg" onclick="showImage(this)" alt="Thumbnail 5">
+    
+    <!-- Add more thumbnails as needed -->
+    </div>
+
+    <!-- Enlarged image container -->
+    <div id="enlarged-container" class="enlarged-container" >
+      <img class="enlarged" id="enlarged-image" alt="">
+      
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  </div>
+
+
+
+
+  <div class="slideshow-container" id="slideshow-container">
+    <center><div class="slide fade">
+      <img src="Alluri Seetha Ramaraju.JPG" alt="Slide 1">
+    </div>    
+    <div class="slide fade">
+      <img src="A._P._J._Abdul_Kalam_in_2008.jpg" alt="Slide 2">
+    </div>
+    <div class="slide fade">
+      <img src="bhagathsingh.jpg" alt="Slide 3">
+    </div>
+    <div class="slide fade">
+      <img src="rani laxmi bai.jpeg" alt="Slide 4">
+    </div>
+    <div class="slide fade">
+      <img src="subhashbose.jpg" alt="Slide 5">
+    </div><center>
+
+    
+    <!-- Add more slides as needed -->
+       
+    <!-- Navigation buttons -->
+    <!-- <button class="btn" >X</button> -->
+    <span onclick="this.parentElement.style.display='none'"  id="clr" class="slideclose">&times;</span>
+  </div>
+
+
+  <script src="./script.js">
+  </script>
+
+
+    
+</body>
+</html>
